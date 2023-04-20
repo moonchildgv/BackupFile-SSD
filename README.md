@@ -1,6 +1,6 @@
 # BackupFile-SSD
 
-**For managing my backups i use these two automatic scripts to keep them on an external SSD. The first allows me to create a folder inside the SSD named with the date of the current day and the second allows me to clean the oldest backup.**
+**For managing my backups i use these two automatic scripts to keep them on an external SSD. The first allows you, once the external SSD is connected, not to have to mount and umont every time you need to make a backup but it does it automatically, it creates a folder inside the SSD named with the date of the current day and copy everything you want into it. The second allows you to clean the oldest backup.**
 
 to use the first script you need to perform some preliminary steps:
 
@@ -15,6 +15,8 @@ to use the first script you need to perform some preliminary steps:
 5. Type the command `sudo mount /dev/<identifier of your SSD> /mnt/ssd` and press Enter to mount your SSD in the newly created directory. Replace `<your SSD identifier>` with the identifier you noted in step 3. Your SSD is now mounted in the /mnt/ssd directory. You can access the files on your SSD through this directory.
 
 6. Now you will have to create a txt file, in the same folder where you save the script, where you can write all the folders you don't want copied to the SSD.
+   
+   **Now you can connect the ssd and run the following script without needing to mount and umount**
 
 ```bash
 #!/bin/bash
