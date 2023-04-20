@@ -2,8 +2,7 @@
 
 **For managing my backups i use these two automatic scripts to keep them on an external SSD. The first allows you, once the external SSD is connected, not to have to mount and umont every time you need to make a backup but it does it automatically, it creates a folder inside the SSD named with the date of the current day and copy everything you want into it. The second allows you to clean the oldest backup.**
 
-to use the first script you need to perform some preliminary steps:
-
+- to use the first script you need to perform some preliminary steps:
 1. insert the SSD into your pc;
 
 2. Open the terminal.
@@ -30,7 +29,7 @@ sudo rsync -avh --exclude-from='listDir.txt' /home/mp /mnt/ssd/$(date +%d-%m-%Y)
 sudo umount -l /mnt/ssd
 ```
 
-to use the second script you need to enter it with a text editor of your choice and enter the path of your SSD:
+- to use the second script you need to enter it with a text editor of your choice and enter the path of your SSD:
 
 ```bash
 #!/bin/bash
