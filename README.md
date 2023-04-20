@@ -12,7 +12,7 @@ to use the first script you need to perform some preliminary steps:
 
 4. Type the command `sudo mkdir /mnt/ssd` and press Enter to create a directory in which to mount your SSD. You can choose a different name for the directory if you like.
 
-5. Type the command `sudo mount /dev/<identifier of your SSD> /mnt/ssd` and press Enter to mount your SSD in the newly created directory. Replace '*<your SSD identifier>*' with the identifier you noted in step 3. Your SSD is now mounted in the /mnt/ssd directory. You can access the files on your SSD through this directory.
+5. Type the command `sudo mount /dev/<identifier of your SSD> /mnt/ssd` and press Enter to mount your SSD in the newly created directory. Replace `<your SSD identifier>` with the identifier you noted in step 3. Your SSD is now mounted in the /mnt/ssd directory. You can access the files on your SSD through this directory.
 
 6. Now you will have to create a txt file, in the same folder where you save the script, where you can write all the folders you don't want copied to the SSD.
 
